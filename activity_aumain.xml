@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00BFFF"  >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="delete setting"
+        android:layout_below="@+id/btn_add"
+        android:layout_alignLeft="@+id/btn_add"
+        android:layout_alignStart="@+id/btn_add"
+        android:layout_alignRight="@+id/btn_add"
+        android:layout_alignEnd="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add new setting"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btn_all"
+        android:layout_alignStart="@+id/btn_all"
+        android:layout_alignRight="@+id/btn_all"
+        android:layout_alignEnd="@+id/btn_all" />
+
+    <Button
+        android:id="@+id/btn_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="check all setting info"
+        android:elevation="0dp"
+        android:layout_above="@+id/btn_add"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_delete"
+        android:layout_alignLeft="@+id/btn_delete"
+        android:layout_alignRight="@+id/btn_delete"
+        android:layout_alignStart="@+id/btn_delete"
+        android:layout_below="@+id/btn_delete"
+        android:text="Choose Mode" />
+
+    <Button
+        android:id="@+id/btn_heal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_mode"
+        android:layout_alignStart="@+id/btn_mode"
+        android:layout_below="@+id/btn_mode"
+        android:text="check health info"
+        android:layout_alignRight="@+id/btn_mode"
+        android:layout_alignEnd="@+id/btn_mode" />
+
+</RelativeLayout>

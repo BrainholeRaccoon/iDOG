@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="189dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.16"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ed_ip"
+                android:layout_width="386dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint=" IP address?"
+                android:inputType="text"
+                android:text="172.20.10.11" />
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:ems="10"
+        android:hint="port?"
+        android:inputType="number"
+        android:text="8888" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bn_connect"
+        android:text="Connect"
+        android:onClick="control" />
+
+    <TextView
+        android:id="@+id/tx_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:text="TextView" />
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+    <TextView
+            android:text="                                                Manu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="0.14" />
+
+    <Button
+        android:id="@+id/bn_wei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="off" />
+
+    <Button
+        android:id="@+id/bn_mot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="on" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="userdefine mode" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:text="auto mode" />
+
+    <Button
+        android:text="Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bn_userset"
+        android:onClick="userset"/>
+
+</LinearLayout>
+
